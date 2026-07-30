@@ -1,0 +1,100 @@
+/* Reset básico e tipografia */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e1e24;
+  color: #e0e0e0;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+.header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #2b2d42;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border-bottom: 4px solid #d90429;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: #8d99ae;
+  font-size: 1.1rem;
+}
+
+/* Layout dos cards */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background-color: #2b2d42;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card h2 {
+  color: #edf2f4;
+  margin-bottom: 12px;
+  border-left: 4px solid #d90429;
+  padding-left: 10px;
+}
+
+.card ul {
+  list-style-type: none;
+  padding-left: 5px;
+}
+
+.card li {
+  margin-bottom: 8px;
+}
+
+.card strong {
+  color: #ef233c;
+}
+
+/* Botão de interação */
+button {
+  align-self: center;
+  background-color: #d90429;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #ef233c;
+}
+
+/* Classe alternada via JS */
+.destaque {
+  border: 2px solid #ef233c;
+  background-color: #3d405b;
+}
